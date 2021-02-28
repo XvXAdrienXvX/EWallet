@@ -10,7 +10,7 @@ namespace EWallet.ApplicationCore.Interfaces.Persistance
         Task<T> GetByIdAsync(int Id);
         Task<IReadOnlyList<T>> GetAllAsync();
         Task<IReadOnlyList<T>> GetAllByIdAsync(int Id);
-        Task AddAsync(T entity);
+        Task<T> AddAsync(T entity);
         Task UpdateAsync(T entity);
         Task DeleteAsync(T entity);
     }

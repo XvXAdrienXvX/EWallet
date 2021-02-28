@@ -1,9 +1,7 @@
 ﻿using AutoMapper;
 using EWallet.ApplicationCore.Interfaces.Persistance;
 using MediatR;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -15,7 +13,7 @@ namespace EWallet.ApplicationCore.Features.Account
         private readonly IAsyncRepository<EWallet.Domain.Account> _accountRepository;
         private readonly IMapper _mapper;
 
-        public GetUserAccountDetailHandler(IMapper mapper, IAsyncRepository<EWallet.Domain.Users> userRepository, 
+        public GetUserAccountDetailHandler(IMapper mapper, IAsyncRepository<EWallet.Domain.Users> userRepository,
             IAsyncRepository<EWallet.Domain.Account> accountRepository)
         {
             _mapper = mapper;

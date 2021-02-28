@@ -9,8 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Account\Commands\" />
-    <Folder Include="Features\Transactions\" />
+    <Folder Include="Features\Transactions\Commands\" />
+    <Folder Include="Features\Transactions\Queries\" />
+    <Folder Include="Features\Users\Commands\" />
   </ItemGroup>
 
   <ItemGroup>
