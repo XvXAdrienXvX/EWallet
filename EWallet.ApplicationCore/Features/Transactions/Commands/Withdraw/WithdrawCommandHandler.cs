@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using EWallet.ApplicationCore.Interfaces.Persistance;
+using EWallet.Domain;
 using MediatR;
 using System.Collections.Generic;
 using System.Threading;
@@ -38,7 +39,13 @@ namespace EWallet.ApplicationCore.Features.Transactions.Commands.Withdraw
 
             if (WithdrawCommandResponse.Success)
             {
+                var transaction = new Transaction()
+                {
+                    Amount = request.amount
+                };
 
+                transaction = await _transactionRepository.AddAsync(transaction);
+                WithdrawCommandResponse.transaction = _mapper.Map<CreateTransactionDto>(transaction);
             }
 
             return WithdrawCommandResponse;

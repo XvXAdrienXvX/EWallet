@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EWallet.ApplicationCore.Interfaces.Persistance
 {
-    public interface ITransactionsRepository : IAsyncRepository<Transactions>
+    public interface ITransactionsRepository : IAsyncRepository<Transaction>
     {
     }
 }

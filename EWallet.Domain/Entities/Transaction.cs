@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EWallet.Domain
 {
-    public class Transactions : AuditableEntity
+    public class Transaction : AuditableEntity
     {
         public int TransactionId { get; set; }
 
