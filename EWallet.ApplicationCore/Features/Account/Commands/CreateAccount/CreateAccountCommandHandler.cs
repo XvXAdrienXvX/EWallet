@@ -18,6 +18,12 @@ namespace EWallet.ApplicationCore.Features.Account.Commands.CreateAccount
 
         public async Task<int> Handle(CreateAccountCommand request, CancellationToken cancellationToken)
         {
+            var validator = new CreateAccountCommandValidator(_accountRepository);
+            var validationResult = await validator.ValidateAsync(request);
+
+            if (validationResult.Errors.Count > 0)
+                throw new Exceptions.ValidationException(validationResult);
+
             var account = _mapper.Map<EWallet.Domain.Account>(request);
             account = await _accountRepository.AddAsync(account);
 
