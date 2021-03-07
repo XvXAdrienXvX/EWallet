@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace EWallet.Domain
 {
@@ -15,5 +13,10 @@ namespace EWallet.Domain
         public string password { get; set; }
 
         public ICollection<Account> AccountList { get; set; }
+
+        public Users()
+        {
+            this.AccountList = new HashSet<Account>();
+        }
     }
 }

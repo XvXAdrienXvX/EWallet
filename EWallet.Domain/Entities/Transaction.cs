@@ -10,7 +10,7 @@ namespace EWallet.Domain
 
         public int AccountId { get; set; }
 
-        public int TransactionTypeId { get; set; }
+        public int TransactionType { get; set; }
 
         public int? Amount { get; set; }
 
@@ -25,5 +25,10 @@ namespace EWallet.Domain
         public string Status { get; set; }
 
         public ICollection<Account> AccountList { get; set; }
+
+        public Transaction()
+        {
+            this.AccountList = new HashSet<Account>();
+        }
     }
 }
