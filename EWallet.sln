@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EWalletApi", "EWalletApi\EW
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EWallet.Domain", "EWallet.Domain\EWallet.Domain.csproj", "{1ABC1DF1-44BC-4AD8-862F-A768364212FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EWallet.ApplicationCore", "EWallet.ApplicationCore\EWallet.ApplicationCore.csproj", "{6AB541AA-B0DA-4187-8355-694086D0AC5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EWallet.ApplicationCore", "EWallet.ApplicationCore\EWallet.ApplicationCore.csproj", "{6AB541AA-B0DA-4187-8355-694086D0AC5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EWallet.Persistence", "EWallet.Persistence\EWallet.Persistence.csproj", "{7836D7AA-2F57-4197-948A-F8AB5C251796}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{6AB541AA-B0DA-4187-8355-694086D0AC5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AB541AA-B0DA-4187-8355-694086D0AC5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AB541AA-B0DA-4187-8355-694086D0AC5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7836D7AA-2F57-4197-948A-F8AB5C251796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7836D7AA-2F57-4197-948A-F8AB5C251796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7836D7AA-2F57-4197-948A-F8AB5C251796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7836D7AA-2F57-4197-948A-F8AB5C251796}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{F559EBF0-04D9-4870-B43F-0F199C074C97} = {511C3EBC-2259-4B4E-B078-8F8B19181589}
 		{1ABC1DF1-44BC-4AD8-862F-A768364212FB} = {511C3EBC-2259-4B4E-B078-8F8B19181589}
 		{6AB541AA-B0DA-4187-8355-694086D0AC5D} = {511C3EBC-2259-4B4E-B078-8F8B19181589}
+		{7836D7AA-2F57-4197-948A-F8AB5C251796} = {511C3EBC-2259-4B4E-B078-8F8B19181589}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9C85E56-9EA9-476D-9BE6-3EDA595106BF}

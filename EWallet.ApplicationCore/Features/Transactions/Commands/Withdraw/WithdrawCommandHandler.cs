@@ -2,6 +2,7 @@
 using EWallet.ApplicationCore.Interfaces.Persistance;
 using EWallet.Domain;
 using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
@@ -41,7 +42,10 @@ namespace EWallet.ApplicationCore.Features.Transactions.Commands.Withdraw
             {
                 var transaction = new Transaction()
                 {
-                    Amount = request.amount
+                    Amount = request.amount,
+                    Sender = request.Sender,
+                    Recipient = request.Recipient,
+                    TransactionDate = DateTime.Now
                 };
 
                 transaction = await _transactionRepository.AddAsync(transaction);
